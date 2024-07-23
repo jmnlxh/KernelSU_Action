@@ -1,4 +1,4 @@
-# KernelSU Action For Begonia
+# KernelSU Action For Redmi 9(Lancelot)
 
 Action for Non-GKI Kernel has some common and requires knowledge of kernel and Android to be used.
 
@@ -21,7 +21,7 @@ First fork this repository to your repository and edit config.env as follows, th
 
 Type your kernel link
 
-e.g. https://github.com/begonia-dev/android_kernel_xiaomi_mt6785
+e.g. https://github.com/emmnueel/android_kernel_xiaomi_mt6768
 
 ### Kernel Source Branch
 
@@ -33,7 +33,7 @@ e.g. 13.0
 
 Type your kernel defconfig
 
-e.g. begonia_user_defconfig
+e.g. lancelot_defconfig
 
 ### Target arch
 
@@ -47,10 +47,9 @@ e.g. Image.gz-dtb
 
 ### Clang version
 
-The default version is zyc clang18.0.0, if you need to change it, you can go to build-kernel.yml to modify it
+The default version is zyc clang1, if you need to change it, you can go to config.env to modify it. You can also use repositories such as proton or neutron clang and can specify branch as well.
 
 Usually Clang12 will pass most kernel builds of 4.14 and above.
-My own Redmi Note 8 Pro 4.14 is using clang18.0.0
 
 ### Extra build commands
 
