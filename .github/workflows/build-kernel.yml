@@ -55,7 +55,6 @@ jobs:
             unzip clang.zip -d clang-aosp/
         fi
 
-
     - name: Download mkbootimg tools
       if: env.MAKE_BOOT_IMAGE == 'true'
       run: |
